@@ -17,7 +17,7 @@ export default function LoginPage() {
         <h1 className={`${juliusSansOne.className} text-black text-4xl `}>
           soloGO
         </h1>
-        <h2 className="text-black text-2xl">Welcome back, traveller!</h2>
+        <h2 className="text-black text-2xl">Welcome back, traveller</h2>
       </a>
       <button
         onClick={() => signIn("google", { callbackUrl: "/" })}
