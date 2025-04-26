@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Julius_Sans_One } from 'next/font/google';
 
+// Logo font
 const juliusSansOne = Julius_Sans_One({
   subsets: ['latin'],
   weight: '400',
