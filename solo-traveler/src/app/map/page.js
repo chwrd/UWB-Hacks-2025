@@ -8,8 +8,9 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 47.6062,
-  lng: -122.3321,
+  // Bothell coords
+  lat: 47.7601,
+  lng: -122.2054,
 };
 
 export default function MyMap() {

@@ -23,7 +23,7 @@ export default function navbar() {
             <nav aria-label="Global" className="flex">
               <ul className=" flex gap-6 text-sm ">
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Culture Compass </a>
+                  <a className="text-gray-500 transition hover:text-gray-500/75" href="map"> Culture Compass </a>
                 </li>
 
                 <li>
