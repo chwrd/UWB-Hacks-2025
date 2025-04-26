@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Julius_Sans_One } from 'next/font/google';
+import { Julius_Sans_One } from "next/font/google";
 
 // Logo font
 const juliusSansOne = Julius_Sans_One({
-  subsets: ['latin'],
-  weight: '400',
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export default function navbar() {
@@ -15,7 +15,9 @@ export default function navbar() {
           <div className="md:flex md:items-center md:gap-12">
             <a className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
-              <h1 className={`${juliusSansOne.className} text-black text-4xl `}>soloGO</h1>
+              <h1 className={`${juliusSansOne.className} text-black text-4xl `}>
+                soloGO
+              </h1>
             </a>
           </div>
 
@@ -23,17 +25,34 @@ export default function navbar() {
             <nav aria-label="Global" className="flex">
               <ul className=" flex gap-6 text-sm ">
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Culture Compass </a>
+                  <a
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="CultureCompass"
+                  >
+                    {" "}
+                    Culture Compass{" "}
+                  </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="advisory"> Globe Guard </a>
+                  <a
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="advisory"
+                  >
+                    {" "}
+                    Globe Guard{" "}
+                  </a>
                 </li>
 
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="map"> Solo Net </a>
+                  <a
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="map"
+                  >
+                    {" "}
+                    Solo Net{" "}
+                  </a>
                 </li>
-
               </ul>
             </nav>
           </div>
@@ -58,9 +77,7 @@ export default function navbar() {
             </div>
 
             <div className="block md:hidden">
-              <button
-                className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-              >
+              <button className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-5"
@@ -69,7 +86,11 @@ export default function navbar() {
                   stroke="currentColor"
                   strokeWidth="2"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </button>
             </div>
@@ -77,7 +98,5 @@ export default function navbar() {
         </div>
       </div>
     </header>
-
   );
-
 }
