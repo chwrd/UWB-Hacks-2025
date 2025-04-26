@@ -1,7 +1,6 @@
 import https from "https";
 import axios from "axios";
 
-
 async function fetchData() {
   const agent = new https.Agent({
     rejectUnauthorized: false, // Bypass SSL verification
@@ -18,7 +17,6 @@ async function fetchData() {
         data: response.data, // Pass data to the page
       },
     };
-
   } catch (error) {
     console.error(error);
     return {
@@ -40,10 +38,15 @@ export default async function API() {
         <div className="">
           {data ? (
             data.map((item) => (
-
-              <div key={item.Title} className="m-20 pb-10 border-b border-gray-700">
+              <div
+                key={item.Title}
+                className="m-20 pb-10 border-b border-gray-700"
+              >
                 <h2 className="m-10 text-lg font-bold">{item.Title}</h2>
-                <div className="m-5" dangerouslySetInnerHTML={{ __html: item.Summary }} />
+                <div
+                  className="m-5"
+                  dangerouslySetInnerHTML={{ __html: item.Summary }}
+                />
               </div>
             ))
           ) : (
