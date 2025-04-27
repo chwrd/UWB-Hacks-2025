@@ -16,7 +16,7 @@ export default function Page() {
       <div className="my-30 flex-col">
         <div className={`${playfairDisplay.className} text-6xl text-center`}>
           <p>
-          Connected by journeys, <br></br> inspired by the world
+          Connected by journeys, <br></br>inspired by the world
           </p>
         </div>
         <Image

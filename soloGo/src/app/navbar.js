@@ -51,6 +51,16 @@ export default function navbar() {
                     href="SoloNet"
                   >
                     {" "}
+                    SoloNet Map{" "}
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-lg text-gray-700 transition hover:text-gray-700/75"
+                    href="profile"
+                  >
+                    {" "}
                     SoloNet{" "}
                   </Link>
                 </li>

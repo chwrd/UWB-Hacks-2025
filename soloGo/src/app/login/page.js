@@ -1,7 +1,6 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import Image from "next/image";
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
 
 // Logo font
@@ -22,10 +21,10 @@ export default function LoginPage() {
       className="w-full h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: "url('/woman.jpg')" }}
     >
-      <div className="flex  bg-[#F9D5D3] justify-center shadow-md rounded-xl p-15">
+      <div className="flex  bg-[#F9D5D3] justify-center shadow-md rounded-xl">
         <form className="max-w-s px-12 pt-15 pb-15 mb-4">
           <h1
-            className={`${juliusSansOne.className} text-black text-4xl text-center`}
+            className={`${juliusSansOne.className} text-black text-4xl text-center print:page-break-after mb-4`}
           >
             soloGO
           </h1>
@@ -78,14 +77,7 @@ export default function LoginPage() {
                 className={`${istokWeb.className} text-center align`}
               >
                 <button class="bg-white px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
-                  <Image
-                    className="w-6 h-6"
-                    src="https://www.svgrepo.com/show/475656/google-color.svg"
-                    loading="lazy"
-                    alt="google logo"
-                    width={24}
-                    height={24}
-                  />
+                  <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo"></img>
                   <span className="text-black">Login with Google</span>
                 </button>
               </a>
@@ -94,7 +86,7 @@ export default function LoginPage() {
         </form>
 
         {/* Card image */}
-        <Image
+        <img
           src="/woman.jpg"
           alt="Background image of a woman"
           width={300}

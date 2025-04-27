@@ -1,7 +1,6 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-// import { img } from "next/image";
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
 
 // Logo font
@@ -22,10 +21,10 @@ export default function LoginPage() {
       className="w-full h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: "url('/woman.jpg')" }}
     >
-      <div className="flex  bg-[#F9D5D3] justify-center shadow-md rounded-xl p-15">
+      <div className="flex  bg-[#F9D5D3] justify-center shadow-md rounded-xl">
         <form className="max-w-s px-12 pt-15 pb-15 mb-4">
           <h1
-            className={`${juliusSansOne.className} text-black text-4xl text-center`}
+            className={`${juliusSansOne.className} text-black text-4xl text-center print:page-break-after mb-4`}
           >
             soloGO
           </h1>
