@@ -30,7 +30,7 @@ export default function Page() {
       </div>
 
       {/* Site Summary */}
-      <section className="bg-gray-100">
+      <section className="bg-[#2596be]/5 shadow-sm">
         <div className="py-40 max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-7">Explore the World with SoloGo</h2>
           <p className="text-lg text-gray-700 text-center leading-relaxed">

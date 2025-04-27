@@ -10,13 +10,13 @@ const juliusSansOne = Julius_Sans_One({
 
 export default function navbar() {
   return (
-    <header className="bg-gray-100 shadow-sm">
+    <header className="bg-[#2596be]/5 shadow-sm">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <Link className="block text-teal-600" href="/">
+            <Link className="block text-[#2596be]" href="/">
               <span className="sr-only">Home</span>
-              <h1 className={`${juliusSansOne.className} text-black text-4xl `}>
+              <h1 className={`${juliusSansOne.className} text-black text-4xl`}>
                 soloGO
               </h1>
             </Link>
@@ -71,7 +71,7 @@ export default function navbar() {
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
               <Link
-                className="rounded-md bg-teal-600 hover:bg-gray-700/75 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                className="rounded-md bg-[#2596be] hover:bg-[#2596be]/75 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
                 href="/login"
               >
                 Login
@@ -79,7 +79,7 @@ export default function navbar() {
 
               <div className="hidden sm:flex">
                 <Link
-                  className="rounded-md bg-gray-100 hover:bg-teal-600/75 hover:text-white px-5 py-2.5 text-sm font-medium text-teal-600"
+                  className="rounded-md bg-gray-100 hover:bg-[#2596be]/75 hover:text-white px-5 py-2.5 text-sm font-medium text-[#2596be]"
                   href="#"
                 >
                   Register
