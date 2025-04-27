@@ -34,8 +34,9 @@ export default function CultureCompass() {
     return (
         <>
             {/* Introductionn */}
-            <div className="flex justify-center items-center mt-20">
+            <div className="flex flex-col items-center mt-20">
                 <h1 className="text-4xl font-bold">Culture Compass</h1>
+                <p className="text-lg mt-4"> Discover key differences laws, culture, with personalized tips powered by AI!</p>
             </div>
 
             {/* Form */}
@@ -168,18 +169,18 @@ export default function CultureCompass() {
                         <div className="relative z-0 w-full mb-5">
                             <select
                                 name="travelingParty"
-                                defaultValue="Traveling Party"
+                                placeholder=" "
                                 className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                                 onChange={(e) => {
                                     const partyMessage = document.getElementById('partyMessage');
-                                    if (e.target.value != '1') {
+                                    if (e.target.value >= '1') {
                                         partyMessage.classList.remove('hidden');
                                     } else {
                                         partyMessage.classList.add('hidden');
                                     }
                                 }}
                             >
-                                <option value="" disabled hidden></option>
+                                <option value=""></option>
                                 <option value="1">Solo</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -187,8 +188,8 @@ export default function CultureCompass() {
                                 <option value="5">5</option>
                             </select>
                             <label htmlFor="travelingParty" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
-                                <p>Traveling Party</p>
-                            </label>
+                            Traveling Party
+                                </label>
 
                         </div>
 
@@ -197,7 +198,7 @@ export default function CultureCompass() {
                             <input
                                 type="text"
                                 name="hi"
-                                placeholder=" "
+                                placeholder="Add additional information - disability, etc."
                                 className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                             />
                         </div>
