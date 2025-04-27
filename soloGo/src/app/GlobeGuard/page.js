@@ -37,7 +37,7 @@ export default async function GlobeGuard() {
       <div className="flex justify-center items-center flex-col">
 
         {/* Introduction */}
-        <div className="flex flex-col items-center mt-20">
+        <div className="flex flex-col items-center mt-15">
           <h1 className="text-4xl font-bold">Travel Advisories</h1>
           <p className="text-lg mb-5">
             Stay informed about the latest travel advisories and safety tips for your next adventure.
@@ -48,7 +48,7 @@ export default async function GlobeGuard() {
         <div className="w-screen flex justify-center items-center">
           <form action="/search" className="max-w-[480px] w-full px-4">
             <div className="relative">
-              <input type="text" name="q" className="w-full border h-12 shadow p-4 rounded-full dark:text-gray-800 dark:border-gray-700 dark:bg-gray-100" placeholder="search"></input>
+              <input type="text" name="q" className="w-full border h-12 shadow p-4 rounded-full dark:text-gray-800 dark:border-gray-700 dark:bg-gray-100" placeholder="Search Country"></input>
               <button type="submit">
                 <svg
                   className=" h-5 w-5 absolute top-3.5 right-3 fill-current dark:text-gray-300"

@@ -34,7 +34,7 @@ export default function CultureCompass() {
     return (
         <>
             {/* Introductionn */}
-            <div className="flex flex-col items-center mt-20">
+            <div className="flex flex-col items-center mt-15">
                 <h1 className="text-4xl font-bold">Culture Compass</h1>
                 <p className="text-lg mb-4"> Discover key differences in cultures and regulations with personalized tips powered by AI!</p>
             </div>

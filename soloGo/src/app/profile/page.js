@@ -26,15 +26,16 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="w-full h-screen">
-      <div className="flex">
-        <div className="bg-[#E3F2FD] rounded-2xl h-screen w-[30%] p-2 m-4 justify-center text-center">
+    <div className="">
+      <div className="grid grid-cols-3 m-20 gap-20">
+        {/* Profile Card */}
+        <div className="bg-[#E3F2FD] rounded-2xl text-center col-span-1 mb-auto ml-auto pt-15 px-30 pb-[50%] flex items-center flex-col">
           <Image
             src="/defaultpfp.png"
             alt="default profile picture"
-            width={300}
-            height={300}
-            className="p-3 rounded-full mx-auto mb-6 max-w-full h-auto"
+            width={200}
+            height={200}
+            className="p-3 rounded-full mb-6"
           />
           <br></br>
           <h1 className={`${istokWeb.className} text-2xl font-bold`}>
@@ -42,40 +43,69 @@ export default function ProfilePage() {
           </h1>
           <p>I love travelling!</p>
         </div>
-        <div className="ml-4">
-          <button
-            className={`${istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
-            type="button"
-          >
-            Upcoming
-          </button>
-          <button
-            className={`${istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
-            type="button"
-          >
-            Travel History
-          </button>
-          <div className="bg-[#FDEDEC] w-3/7 front-bold ml-4 rounded-2xl">
-            <Image
-              src="/Japan1.jpg"
-              alt="Image of Japan 1"
-              className="rounded h-full object-cover"
-              width={1000}
-              height={1000}
-            />
-            <div className="p-4">
-              <h1 className="font-bold">Itinerary 1</h1>
-              <a>Country: Japan</a>
-              <br></br>
-              <a>Date: June 6 2025 - June 26 2025</a>
-              <br></br>
-              <a>Cities: Tokyo, Osaka, Kyoto</a>
-              <br></br>
-              <a>Transport: Haneda Airport</a>
+
+        {/* Buttons and Travel Card */}
+        <div className="flex flex-col col-span-2">
+          {/* Buttons */}
+          <div>
+            <button
+              className={`${istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
+              type="button"
+            >
+              Upcoming
+            </button>
+            <button
+              className={`${istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
+              type="button"
+            >
+
+              Travel History
+            </button>
+          </div>
+
+          {/* Travel Cards */}
+          <div className="grid grid-cols-2 gap-10">
+            <div className="bg-[#FDEDEC] front-bold rounded-2xl ">
+              <Image
+                src="/Japan1.jpg"
+                alt="Image of Japan 1"
+                className="rounded object-cover"
+                width={500}
+                height={500}
+              />
+              <div className="p-4">
+                <h1 className="font-bold">Itinerary 1</h1>
+                <a>Country: Japan</a>
+                <br></br>
+                <a>Date: June 6 2025 - June 26 2025</a>
+                <br></br>
+                <a>Cities: Tokyo, Osaka, Kyoto</a>
+                <br></br>
+                <a>Transport: Haneda Airport</a>
+              </div>
+            </div>
+            <div className="bg-[#FDEDEC] front-bold rounded-2xl ">
+              <Image
+                src="/Japan1.jpg"
+                alt="Image of Japan 1"
+                className="rounded object-cover"
+                width={1000}
+                height={1000}
+              />
+              <div className="p-4">
+                <h1 className="font-bold">Itinerary 1</h1>
+                <a>Country: Japan</a>
+                <br></br>
+                <a>Date: June 6 2025 - June 26 2025</a>
+                <br></br>
+                <a>Cities: Tokyo, Osaka, Kyoto</a>
+                <br></br>
+                <a>Transport: Haneda Airport</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
