@@ -15,11 +15,11 @@ export default function ProfilePage() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
-  useEffect(() => {
-    if (status === "unauthenticated") {
-      router.push("/login");
-    }
-  }, [status, router]);
+  // useEffect(() => {
+  //   if (status === "unauthenticated") {
+  //     router.push("/login");
+  //   }
+  // }, [status, router]);
 
   if (status === "loading") {
     return <p>Loading...</p>;
@@ -50,7 +50,7 @@ export default function ProfilePage() {
             Upcoming
           </button>
           <button
-            className={`{istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
+            className={`${istokWeb.className} bg-[#E3F2FD] hover:bg-[#afcce0] front-bold p-2 pl-4 pr-4 m-4 rounded-2xl`}
             type="button"
           >
             Travel History

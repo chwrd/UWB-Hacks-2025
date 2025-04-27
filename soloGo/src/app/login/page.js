@@ -2,6 +2,7 @@
 
 import { signIn } from "next-auth/react";
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
+import Images from "next/image";
 
 // Logo font
 const juliusSansOne = Julius_Sans_One({
@@ -76,8 +77,8 @@ export default function LoginPage() {
                 onClick={() => signIn("google", { callbackUrl: "/" })}
                 className={`${istokWeb.className} text-center align`}
               >
-                <button class="bg-white px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
-                  <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo"></img>
+                <button className="bg-white px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
+                  <img className="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo"></img>
                   <span className="text-black">Login with Google</span>
                 </button>
               </a>
@@ -86,7 +87,7 @@ export default function LoginPage() {
         </form>
 
         {/* Card image */}
-        <img
+        <Images
           src="/woman.jpg"
           alt="Background image of a woman"
           width={300}
