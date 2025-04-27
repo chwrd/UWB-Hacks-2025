@@ -46,10 +46,12 @@ export default function Home() {
             </div>
 
             <div>
-              <img
-                src="globeGuardHome.webp"
+              <Image
+                src={"globeGuardHome.webp"}
                 className="rounded"
-                alt=""
+                width={1000}
+                height={1000}
+                 alt=""
               />
             </div>
           </div>
@@ -73,7 +75,7 @@ export default function Home() {
             </div>
 
             <div className="order-first">
-              <img
+              <Image
                 src="cultureCompassHome.webp"
                 className="rounded"
                 alt=""
@@ -100,7 +102,7 @@ export default function Home() {
             </div>
 
             <div>
-              <img
+              <Image
                 src="soloNetHome.webp"
                 className="rounded"
                 alt=""
