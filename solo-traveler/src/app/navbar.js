@@ -37,7 +37,7 @@ export default function navbar() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="advisory"
+                    href="GlobeGuard"
                   >
                     {" "}
                     Globe Guard{" "}
@@ -47,7 +47,7 @@ export default function navbar() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="map"
+                    href="SoloNet"
                   >
                     {" "}
                     Solo Net{" "}
