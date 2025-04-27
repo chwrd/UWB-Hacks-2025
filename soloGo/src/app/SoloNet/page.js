@@ -37,7 +37,7 @@ export default function MyMap() {
       <div className="flex flex-col items-center text-center mt-5">
         <h1 className="text-4xl font-bold">Solo Net Map</h1>
         <p className="text-lg mb-4">
-          Bookmark places you've travelled to!
+          Bookmark places you&#39;ve travelled to!
          
         </p> 
         <input

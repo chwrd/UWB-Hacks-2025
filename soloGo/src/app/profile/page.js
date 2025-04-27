@@ -26,7 +26,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="w-full h-screen bg-cover bg-center justify-between">
+    <div className="w-full h-screen">
       <div className="flex">
         <div className="bg-[#E3F2FD] rounded-2xl h-screen w-[30%] p-2 m-4 justify-center text-center">
           <Image
