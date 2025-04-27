@@ -36,7 +36,7 @@ export default function CultureCompass() {
             {/* Introductionn */}
             <div className="flex flex-col items-center mt-20">
                 <h1 className="text-4xl font-bold">Culture Compass</h1>
-                <p className="text-lg mb-4"> Discover key differences laws, culture, with personalized tips powered by AI!</p>
+                <p className="text-lg mb-4"> Discover key differences in cultures and regulations with personalized tips powered by AI!</p>
             </div>
             
 
@@ -75,28 +75,28 @@ export default function CultureCompass() {
                 <div className="mx-auto max-w-md p-7 bg-white border-0 shadow-lg sm:rounded-3xl">
 
                     <form id="form" noValidate>
-                        {/* Country 1 and Country 2 */}
+                        {/* Home Country and Destination */}
                         <div className="flex flex-row space-x-4">
                             <div className="relative z-0 w-full mb-5">
                                 <input
                                     type="text"
-                                    name="country1"
+                                    name="homeCountry"
                                     placeholder=" "
                                     className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                                 />
-                                <label htmlFor="country1" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
-                                    Country 1
+                                <label htmlFor="homeCountry" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
+                                    Home Country
                                 </label>
                             </div>
                             <div className="relative z-0 w-full mb-5">
                                 <input
                                     type="text"
-                                    name="country2"
+                                    name="destination"
                                     placeholder=" "
                                     className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                                 />
-                                <label htmlFor="country2" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
-                                    Country 2
+                                <label htmlFor="destination" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
+                                    Destination
                                 </label>
                             </div>
                         </div>
@@ -119,23 +119,23 @@ export default function CultureCompass() {
                             <div className="relative z-0 w-full mb-5">
                                 <input
                                     type="date"
-                                    name="date1"
+                                    name="arrival"
                                     placeholder=" "
                                     className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                                 />
-                                <label htmlFor="date1" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
-                                    Date 1
+                                <label htmlFor="arrival" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
+                                    Arrival
                                 </label>
                             </div>
                             <div className="relative z-0 w-full mb-5">
                                 <input
                                     type="date"
-                                    name="date2"
+                                    name="departure"
                                     placeholder=" "
                                     className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                                 />
-                                <label htmlFor="date2" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
-                                    Date 2
+                                <label htmlFor="departure" className="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
+                                    Departure
                                 </label>
                             </div>
                         </div>
@@ -199,7 +199,7 @@ export default function CultureCompass() {
                             <input
                                 type="text"
                                 name="hi"
-                                placeholder="Add additional information - disability, etc."
+                                placeholder="Add additional information - elderly, children, disabilites, etc."
                                 className="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
                             />
                         </div>
