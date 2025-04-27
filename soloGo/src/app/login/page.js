@@ -1,7 +1,7 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import
+import Image from "next/image";
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
 
 // Logo font
