@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Julius_Sans_One } from "next/font/google";
+import Link from "next/link";
 
 // Logo font
 const juliusSansOne = Julius_Sans_One({
@@ -13,54 +14,45 @@ export default function navbar() {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="/">
+            <Link className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
               <h1 className={`${juliusSansOne.className} text-black text-4xl `}>
                 soloGO
               </h1>
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:block ">
             <nav aria-label="Global" className="flex">
               <ul className=" flex gap-6 text-sm ">
                 <li>
-                  <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                  <Link
+                    className="text-lg text-gray-700 transition hover:text-gray-700/75"
                     href="CultureCompass"
                   >
                     {" "}
-                    Culture Compass{" "}
-                  </a>
+                    CultureCompass{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                  <Link
+                    className="text-lg text-gray-700 transition hover:text-gray-700/75"
                     href="GlobeGuard"
                   >
                     {" "}
-                    Globe Guard{" "}
-                  </a>
+                    GlobeGuard{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    href="profile"
-                  >
-                    {" "}
-                    Solo Net{" "}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                  <Link
+                    className="text-lg text-gray-700 transition hover:text-gray-700/75"
                     href="SoloNet"
                   >
                     {" "}
-                    SoloNet Map{" "}
-                  </a>
+                    SoloNet{" "}
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -68,20 +60,20 @@ export default function navbar() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
-                className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+              <Link
+                className="rounded-md bg-teal-600 hover:bg-gray-700/75 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
                 href="/login"
               >
                 Login
-              </a>
+              </Link>
 
               <div className="hidden sm:flex">
-                <a
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                <Link
+                  className="rounded-md bg-gray-100 hover:bg-teal-600/75 hover:text-white px-5 py-2.5 text-sm font-medium text-teal-600"
                   href="#"
                 >
                   Register
-                </a>
+                </Link>
               </div>
             </div>
 
