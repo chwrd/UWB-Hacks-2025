@@ -1,7 +1,6 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-// import { img } from "next/image";
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
 
 // Logo font
@@ -25,7 +24,7 @@ export default function LoginPage() {
       <div className="flex w-full bg-[#F9D5D3] justify-between shadow-md rounded-xl mt-15 mb-15 ml-50 mr-50">
         <form className="max-w-s px-12 pt-15 pb-15 mb-4">
           <h1
-            className={`${juliusSansOne.className} text-black text-4xl text-center`}
+            className={`${juliusSansOne.className} text-black text-4xl text-center print:page-break-after mb-4`}
           >
             soloGO
           </h1>
@@ -57,7 +56,7 @@ export default function LoginPage() {
               </span>
             </div>
             <a
-              onClick={() => signIn("google", { callbackUrl: "/" })}
+              onClick={() => signIn("google", { callbackUrl: "/profile" })}
               className={`${istokWeb.className} text-blue-700 text-center underline`}
             >
               Log in with Google

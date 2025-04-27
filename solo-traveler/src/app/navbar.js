@@ -47,10 +47,19 @@ export default function navbar() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="map"
+                    href="profile"
                   >
                     {" "}
                     Solo Net{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-500 transition hover:text-gray-500/75"
+                    href="map"
+                  >
+                    {" "}
+                    Map{" "}
                   </a>
                 </li>
               </ul>
