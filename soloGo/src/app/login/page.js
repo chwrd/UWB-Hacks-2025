@@ -1,7 +1,7 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-// import { img } from "next/image";
+import
 import { Julius_Sans_One, Istok_Web } from "next/font/google";
 
 // Logo font
@@ -73,7 +73,7 @@ export default function LoginPage() {
 
             {/* Login with Google */}
             <div className="flex justify-center items-center ">
-              <a
+              <Image
                 onClick={() => signIn("google", { callbackUrl: "/" })}
                 className={`${istokWeb.className} text-center align`}
               >
