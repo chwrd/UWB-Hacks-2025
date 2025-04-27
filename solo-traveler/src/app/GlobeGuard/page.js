@@ -35,11 +35,11 @@ export default async function GlobeGuard() {
   return (
     <div>
       <div className="flex justify-center items-center flex-col">
-        {/* Introduction */}
-        <div className="mt-20 mb-10 text-center">
 
-          <h1 className="m-15 text-xl">Travel Advisories</h1>
-          <p className="m-5">
+        {/* Introduction */}
+        <div className="flex flex-col items-center mt-20">
+          <h1 className="text-4xl font-bold">Travel Advisories</h1>
+          <p className="text-lg mb-5">
             Stay informed about the latest travel advisories and safety tips for your next adventure.
            </p>
         </div>
