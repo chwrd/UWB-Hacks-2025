@@ -36,20 +36,18 @@ export default function Home() {
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  GlobeGuard
                 </h2>
 
                 <p className="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
-                  architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
-                  sequi.
+                GlobeGuard keeps you informed with real-time safety updates from trusted government sources, helping you travel smart and confident
                 </p>
               </div>
             </div>
 
             <div>
               <img
-                src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="globeGuardHome.webp"
                 className="rounded"
                 alt=""
               />
@@ -65,20 +63,18 @@ export default function Home() {
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  CultureCompass
                 </h2>
 
                 <p className="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
-                  architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
-                  sequi.
+                Culture Compass helps you navigate key cultural and infrastructure differences across countries. Whether it’s which side of the road people drive on, the type of electrical outlets you’ll need, or local customs you should know, we make it easy to prepare for your journey. Explore the world with confidence
                 </p>
               </div>
             </div>
 
             <div className="order-first">
               <img
-                src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="cultureCompassHome.webp"
                 className="rounded"
                 alt=""
               />
@@ -94,20 +90,18 @@ export default function Home() {
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  SoloNet
                 </h2>
 
                 <p className="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque saepe
-                  architecto maiores repudiandae amet perferendis repellendus, reprehenderit voluptas
-                  sequi.
+                Traveling alone doesn’t mean you’re on your own. SoloNet helps you connect, share, and support each other on your journeys
                 </p>
               </div>
             </div>
 
             <div>
               <img
-                src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="soloNetHome.webp"
                 className="rounded"
                 alt=""
               />
