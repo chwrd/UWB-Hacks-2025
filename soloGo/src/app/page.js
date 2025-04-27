@@ -8,7 +8,7 @@ const playfairDisplay = Playfair_Display({
   weight: "400", // Add weights as needed
 });
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       {/* Introduction */}
