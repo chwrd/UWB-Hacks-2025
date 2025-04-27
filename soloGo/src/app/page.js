@@ -47,7 +47,7 @@ export default function Page() {
 
             <div>
               <Image
-                src={"globeGuardHome.webp"}
+                src={"/globeGuardHome.webp"}
                 className="rounded"
                 width={1000}
                 height={1000}
@@ -76,9 +76,11 @@ export default function Page() {
 
             <div className="order-first">
               <Image
-                src="cultureCompassHome.webp"
+                src="/cultureCompassHome.webp"
                 className="rounded"
                 alt=""
+                width={1000}
+                height={1000}
               />
             </div>
           </div>
@@ -103,9 +105,11 @@ export default function Page() {
 
             <div>
               <Image
-                src="soloNetHome.webp"
+                src="/soloNetHome.webp"
                 className="rounded"
                 alt=""
+                width={1000}
+                height={1000}
               />
             </div>
           </div>
