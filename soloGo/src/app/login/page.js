@@ -81,7 +81,7 @@ export default function LoginPage() {
                   <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo"></img>
                   <span className="text-black">Login with Google</span>
                 </button>
-              </a>
+              </Image>
             </div>
           </div>
         </form>
