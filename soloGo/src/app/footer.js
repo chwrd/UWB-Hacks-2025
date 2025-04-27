@@ -22,7 +22,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <p>© 2025 soloGo</p>
-                <p>Connected by journeys, inspired by the world</p>
+                <p>Connected by Journeys, inspired by the World</p>
             </div>
 
 
